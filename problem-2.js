@@ -7,4 +7,4 @@ const result = str.split('').filter(char => char !== ' ').join('');
     return result.toUpperCase();
 }
 }
-// console.log(onlyCharacter("Cy   bar- At  tac k  "))
+// console.log(onlyCharacter("Serv er : : Do wn"))
