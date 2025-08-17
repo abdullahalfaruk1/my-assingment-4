@@ -56,3 +56,67 @@ const total2 = player2.foul + player2.cardY + player2.cardR;
 
 
 // console.log(bestTeam(t1,t2));
+
+
+
+
+
+
+
+function  isSame(arr1 , arr2 ){
+
+if(!Array.isArray(arr1) || !Array.isArray(arr2)){
+    return "Invalid";
+}
+ if (arr1.length !== arr2.length) {
+    return false;
+  }
+
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+   
+  }
+      return true;
+}
+
+
+
+
+
+
+
+
+
+function  resultReport( marks ){
+ if (!Array.isArray(marks)) {
+    return "Invalid";
+  }
+ if (marks.length === 0) {
+    return { finalScore: 0, pass: 0, fail: 0 };
+  }
+  let total = 0;
+  let passCount = 0;
+  let failCount = 0;
+
+ for (let i = 0; i < marks.length; i++) {
+    let score = marks[i];
+    total += score;
+       
+    if (score >= 40) {
+      passCount++;
+    } 
+
+    else {
+      failCount++;
+    }
+  }
+
+   const avg = Math.round(total / marks.length);
+
+  return {
+    finalScore: avg,   pass: passCount, fail: failCount
+};
+
+}
