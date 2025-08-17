@@ -1,36 +1,3 @@
-function  totalFine(fare) {
-if(typeof fare !== "number"){
-    return "Invalid";
-}
-
-else if(fare <= 0){
-    return "Invalid";
-}
-
-
-    const fine = fare + (fare * 20 / 100) + 30;
-    return fine;
-}
-
-
-
-
-
-function onlyCharacter(str){
-if (typeof str !== "string"){
-    return "Invalid";
-} 
-const result = str.split('').filter(char => char !== ' ').join('');
-{
-    return result.toUpperCase();
-}
-}
-
-
-
-
-
-
 // let t1 ={ name: "Germany", foul: 10, cardY: 1, cardR: 1 };
 // let t2 = "France";
 

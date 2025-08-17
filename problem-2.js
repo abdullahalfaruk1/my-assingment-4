@@ -1,10 +1,10 @@
-function onlyCharacter(input){
-if (typeof input !== "string"){
+function onlyCharacter(str){
+if (typeof str !== "string"){
     return "Invalid";
 } 
-const result = input.split('').filter(char => char !== ' ').join('');
+const result = str.split('').filter(char => char !== ' ').join('');
 {
     return result.toUpperCase();
 }
 }
-console.log(onlyCharacter(["hack", "me"]))
+// console.log(onlyCharacter("Cy   bar- At  tac k  "))

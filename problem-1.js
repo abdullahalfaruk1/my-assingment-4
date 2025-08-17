@@ -11,4 +11,4 @@ else if(fare <= 0){
     const fine = fare + (fare * 20 / 100) + 30;
     return fine;
 }
-console.log(totalFine("gorib"));
+// console.log(totalFine("gorib"));
